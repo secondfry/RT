@@ -82,11 +82,9 @@ void	validate(t_rtv *rtv, t_level *root)
  */
 t_byte	validate_object(t_rtv *rtv, t_level *root, t_byte obj_type)
 {
-	t_byte	res;
 	t_byte	i;
 	t_level	*level;
 
-	res = 0;
 	check(root->type != LTYPE_NODE, 1, "[ERR] EXPECTED NODE\n");
 	i = 0;
 	while (i < root->data->used)
